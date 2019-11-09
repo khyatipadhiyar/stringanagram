@@ -6,27 +6,20 @@ function checkString()
 
 	var splitCharOne= stringOne.split("").sort().join("");
 	var splitCharTwo= stringTwo.split("").sort().join("");
-
-
-	console.log(splitCharOne);
-	console.log(splitCharTwo);
-
+	
 	//var uniqueCharOne=uniqueCharacter(splitCharOne);
 	//var uniqueCharTwo=uniqueCharacter(splitCharTwo);
 	//console.log(uniqueCharOne);
 	//console.log(uniqueCharTwo);
 
 	var msg;
-
 	if(splitCharOne!=splitCharTwo)
 	{
-		msg="Strings Are Not Anagaram !";
+	   msg="Strings Are Not Anagaram !";
 
 	}else
 	{
-		
-		msg="String Are Anagaram !";
-
+	  msg="String Are Anagaram !";
 	}
 	document.getElementById('demo').innerHTML=msg;
 }
@@ -38,7 +31,6 @@ function uniqueCharacter(str1)
 {
 	var str=str1;
 	var unique="";
-
 	for (var i = 0; i<str.length; i++)
 	{
 		if(unique.indexOf(str.charAt(i))==-1)
